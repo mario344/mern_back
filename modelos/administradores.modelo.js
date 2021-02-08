@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 let Schema = mongoose.Schema;
 
-let UsuariosSchema = new Schema({
+let AdministradoresSchema = new Schema({
 
     usuario: {
         type: String,
@@ -23,7 +23,7 @@ let UsuariosSchema = new Schema({
 Evitar devolver en la DATA el campo Password
 =============================================*/
 
-UsuariosSchema.methods.toJSON = function() {
+AdministradoresSchema.methods.toJSON = function() {
 
     let admin = this;
     let adminObject = admin.toObject();
@@ -37,4 +37,4 @@ UsuariosSchema.methods.toJSON = function() {
 EXPORTAMOS EL MODELO
 =============================================*/
 
-module.exports = mongoose.model("Usuarios", UsuariosSchema);
+module.exports = mongoose.model("Administradores", AdministradoresSchema);

@@ -56,6 +56,7 @@ app.use(require('./rutas/slide.ruta'));
 app.use(require('./rutas/galeria.ruta'));
 app.use(require('./rutas/articulos.ruta'));
 app.use(require('./rutas/usuarios.ruta'));
+app.use(require('./rutas/administradores.ruta'));
 
 /*=============================================
 CONEXIÓN A LA BASE DE DATOS
